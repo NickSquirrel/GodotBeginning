@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dq1n43t1qafvl" path="res://Scenes/player.tscn" id="1_ebmjs"]
 [ext_resource type="Texture2D" uid="uid://cju8lm3srymoh" path="res://Assets/brackeys_platformer_assets/sprites/world_tileset.png" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://dbvgawunse08n" path="res://Scenes/platform.tscn" id="2_wrm1d"]
+[ext_resource type="PackedScene" uid="uid://bpmuaw7b6dwir" path="res://Scenes/coin.tscn" id="4_3dryh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wrm1d"]
 texture = ExtResource("2_qxrlw")
@@ -230,3 +231,12 @@ position = Vector2(344, 21)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="platform2" unique_id=403952496]
 libraries/ = SubResource("AnimationLibrary_wowpa")
 autoplay = &"move"
+
+[node name="Coin" parent="." unique_id=2071010717 instance=ExtResource("4_3dryh")]
+position = Vector2(40, 41)
+
+[node name="Coin2" parent="." unique_id=371448034 instance=ExtResource("4_3dryh")]
+position = Vector2(184, 42)
+
+[node name="Coin3" parent="." unique_id=287599150 instance=ExtResource("4_3dryh")]
+position = Vector2(200, 42)
