@@ -4,7 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://cju8lm3srymoh" path="res://Assets/brackeys_platformer_assets/sprites/world_tileset.png" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://dbvgawunse08n" path="res://Scenes/platform.tscn" id="2_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://bpmuaw7b6dwir" path="res://Scenes/coin.tscn" id="4_3dryh"]
-[ext_resource type="PackedScene" uid="uid://i1axhn58l4if" path="res://killzone.tscn" id="5_wowpa"]
+[ext_resource type="PackedScene" uid="uid://i1axhn58l4if" path="res://Scenes/killzone.tscn" id="5_wowpa"]
+[ext_resource type="PackedScene" uid="uid://dahd5bv0o3l04" path="res://Scenes/slime.tscn" id="6_i6g32"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wrm1d"]
 texture = ExtResource("2_qxrlw")
@@ -215,6 +216,7 @@ _data = {
 [node name="Game" type="Node2D" unique_id=1896490240]
 
 [node name="Player" parent="." unique_id=740095752 instance=ExtResource("1_ebmjs")]
+position = Vector2(503, 10)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=531212243]
 zoom = Vector2(4, 4)
@@ -257,3 +259,6 @@ position = Vector2(344, 21)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="platforms/platform2" unique_id=403952496]
 libraries/ = SubResource("AnimationLibrary_wowpa")
 autoplay = &"move"
+
+[node name="slime" parent="." unique_id=2075319870 instance=ExtResource("6_i6g32")]
+position = Vector2(523, 48)
